@@ -34,9 +34,9 @@ $('document').ready(function () {
 			$.each(items, function (i, val) {
 				if (i < 3) {
 					add_leaders_item(val);
-				} else if (i < 9) {
+				} else if (i < 8) {
 					add_participants_item(val, '1');
-				} else if (i < 15) {
+				} else if (i < 14) {
 					add_participants_item(val, '2');
 				} else {
 					add_participants_item(val, '3');
@@ -69,4 +69,10 @@ $('document').ready(function () {
 	function to_float(num) {
 		return parseFloat(num.replace(/,/, '.'));
 	}
+
+	$(document).on('keydown', function (evt) {
+		if (evt.keyCode == 39) {
+			$('.slide').toggleClass('active');
+		}
+	});
 });

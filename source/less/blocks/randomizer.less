@@ -1,0 +1,46 @@
+.randomizer-label {
+  font-size:  calc(100vw * (100 / 1980));
+  line-height:  calc(100vw * (135 / 1980));
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  margin-block: calc(100vw * (158 / 1980))  calc(100vw * (30 / 1980));
+}
+
+.randomizer {
+  font-size: calc(100vw * (300 / 1980));
+  line-height: calc(100vw * (405 / 1980));
+  width:  calc(100vw * (600 / 1980));
+  height:  calc(100vw * (500 / 1980));
+  background: @bg;
+  border-radius: 50px;
+  display: grid;
+  place-content: center;
+}
+
+.randomizer-btn {
+  font-family: 'a_futurica';
+  font-size:  calc(100vw * (80 / 1980));
+  line-height:  calc(100vw * (105 / 1980));
+  font-weight: 800;
+  color: @primary;
+  width:  calc(100vw * (600 / 1980));
+  height:  calc(100vw * (140 / 1980));
+  background: @bg;
+  border: none;
+  border-radius: 40px;
+  margin-top: calc(100vw * (50 / 1980));
+  display: grid;
+  place-content: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: @special;
+  }
+
+  &:active {
+    color: @bg;
+    background-color: @primary;
+  }
+}
