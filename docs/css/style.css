@@ -28,6 +28,7 @@ body {
   font-style: normal;
   font-weight: 800;
   color: #6B3C30;
+  text-transform: uppercase;
   height: 100vh;
   background: #6B3C30 url(../img/bg.webp) no-repeat center;
   background-size: 100% 100%;
@@ -109,7 +110,7 @@ body {
   flex-shrink: 0;
 }
 .leaders__name {
-  font-size: calc(100vw * (55 / 1980));
+  font-size: calc(100vw * (50 / 1980));
   line-height: calc(100vw * (67 / 1980));
   width: calc(100vw * (550 / 1980));
   margin-inline: calc(100vw * (42 / 1980)) auto;
@@ -142,7 +143,7 @@ body {
   flex-shrink: 0;
 }
 .participants__name {
-  font-size: calc(100vw * (42 / 1980));
+  font-size: calc(100vw * (37 / 1980));
   line-height: calc(100vw * (50 / 1980));
   margin-inline: calc(100vw * (34 / 1980)) auto;
 }
@@ -167,7 +168,7 @@ body {
   width: calc(100vw * (84 / 1980));
 }
 .slide2 .participants__name {
-  font-size: calc(100vw * (40 / 1980));
+  font-size: calc(100vw * (32 / 1980));
   line-height: calc(100vw * (43 / 1980));
 }
 .slide2 .participants__scores {
