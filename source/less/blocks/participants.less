@@ -1,0 +1,40 @@
+.participants {
+  display: grid;
+
+  &__list {
+    max-height: 100vh;
+    overflow: hidden;
+  }
+
+  &__item {
+    width: calc(100vw * (797 / 1980));
+    padding: calc(100vw * (25 / 1980)) calc(100vw * (10 / 1980));
+    margin-block: calc(100vw * (10 / 1980));
+    background-color: @bg;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(0);
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: calc(100vw * (55 / 1980));
+    line-height: calc(100vw * (66 / 1980));
+  }
+
+  &__scores {
+    font-weight: 400;
+    font-size: calc(100vw * (65 / 1980));
+    line-height: calc(100vw * (78 / 1980));
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    margin-top: calc(100vw * (-10 / 1980));
+  }
+
+}
+
+.marquee-wrapper {
+  overflow: hidden;
+  position: relative;
+}
